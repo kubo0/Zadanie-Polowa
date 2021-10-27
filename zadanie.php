@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Zadanie-połowa</title>
+    <title>Zadanie: Szybsza połowa wygrywa</title>
 </head>
 <body>
     <?php
@@ -39,11 +39,15 @@
 
         $baza->close();
     ?>
-
-    <form action="request.php" method="post">
-        
-    </form>
-
     <br>
+    <form action="request.php" method="post">
+        <label for="wartość_min">Wartość minimalna: </label>
+        <input type="text" name="wart_min"><br>
+        <label for="wartość_max">Wartość maksymalna: </label>
+        <input type="text" name="wart_max"><br>
+        <label for="informacja">Informacja: </label>
+        <input type="text" name="informacja"><br>
+        <button type="submit">Wstaw do bazy</button>
+    </form>
 </body>
 </html>
